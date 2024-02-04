@@ -22,16 +22,16 @@ const InputBar = () => {
    
 
     return (
-        <div className=" bg-gray-200 rounded-[10px] w-[50%] sm:w-[90%] sm:mt-[20%] mt-[4%] p-3 px-5 mb-[5%] mx-auto">
+        <div className=" bg-gray-200 rounded-[10px] w-[50%] sm:w-[90%] sm:mt-[24%] mt-[4%] p-3 px-5 mb-[5%] mx-auto">
             <div >
 
-                <label htmlFor="barcode" className=" font-medium uppercase">Enter&#160;Barcode&#160;:</label><br />
+                <label htmlFor="barcode" className=" font-medium uppercase sm:text-[15px]">Enter&#160;Barcode&#160;:</label><br />
 
                 <div className="flex flex-row justify-start gap-3 py-3">
 
                     <input type="text" placeholder="Enter your barcode" className=" focus:outline-none border w-[75%] p-2 rounded-[10px]" onChange={(e) => { handleInput(e.target.value) }} value={input} />
 
-                    <button className="p-2 w-[20%] text-white bg-black font-medium text-[16px] rounded-[10px]" onClick={() => Clicked()}>Search</button>
+                    <button className="p-2 sm:px-3 w-[20%] text-white bg-black font-medium text-[16px] rounded-[10px]" onClick={() => Clicked()}>Search</button>
 
                 </div>
             </div>

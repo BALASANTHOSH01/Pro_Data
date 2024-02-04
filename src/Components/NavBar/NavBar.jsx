@@ -54,7 +54,7 @@ const NavBar = () => {
                 </div>
             </div>
 
-            <div className="">
+            <div className="sm:hidden">
                 <div className="p-2 cursor-pointer text-[18px] flex justify-center items-center text-center border hover:bg-gray-200 duration-300 ease-in-out rounded-[50%] text-black">
                     <Question />
                 </div>
