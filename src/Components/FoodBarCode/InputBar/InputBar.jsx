@@ -35,6 +35,7 @@ const InputBar = () => {
 
                 </div>
             </div>
+            
            {
             productfound && <ProductData productfound={productfound}/> 
            }
@@ -44,6 +45,7 @@ const InputBar = () => {
                 <p>Product Not Found</p>
             </div>
            }
+
         </div>
     )
 }

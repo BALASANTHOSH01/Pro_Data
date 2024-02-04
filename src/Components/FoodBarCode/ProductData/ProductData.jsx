@@ -2,7 +2,7 @@
 const ProductData = ({ productfound }) => {
     return (
         <div className=" mx-auto mt-[2%] border rounded-[10px] px-2 mb-[5%]">
-            <img src={productfound.image_url} alt="ProductImg" className="w-[50%] mx-auto max-h-[250px] min-h-[200px] my-[2%]" />
+            <img src={productfound.image_url} alt="ProductImg" className="w-[50%] mx-auto sm:w-[80%] max-h-[250px] min-h-[200px] my-[2%]" />
 
             <div className="flex flex-col gap-2 bg-white mt-[4%] rounded-[10px] p-3 px-5">
 
