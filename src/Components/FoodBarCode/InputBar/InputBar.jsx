@@ -38,6 +38,12 @@ const InputBar = () => {
            {
             productfound && <ProductData productfound={productfound}/> 
            }
+           {
+            productfound === undefined && 
+            <div className="my-[4%] text-[18px] font-medium">
+                <p>Not found</p>
+            </div>
+           }
         </div>
     )
 }
