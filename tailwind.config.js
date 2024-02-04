@@ -16,7 +16,18 @@ module.exports = {
         "2xl": "1400px",
       },
     },
+    screens: {
+      'sm': {'max': '639px'},
+      'md': {'max': '767px'},
+      'lg': {'max': '1023px'},
+      'xl': {'max': '1279px'},
+    },
+
     extend: {
+      fontFamily:{
+        Protest:["Protest Revolution"],
+        Lobster:["Lobster"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

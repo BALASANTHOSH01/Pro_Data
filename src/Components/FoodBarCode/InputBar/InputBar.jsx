@@ -14,16 +14,16 @@ const InputBar = () => {
         setClicked(true);
         const response = await fetch(` https://world.openfoodfacts.org/api/v2/product/${input}.json`);
         const Data = await response.json();
-        setProductFound(Data);
+        setProductFound(Data.product);
 
-        console.log(Data);
+        console.log(Data.product);
     }
 
    
 
     return (
-        <div>
-            <div className=" bg-gray-200 rounded-[10px] w-[60%] mt-[4%] p-3 mx-auto">
+        <div className=" bg-gray-200 rounded-[10px] w-[50%] sm:w-[90%] sm:mt-[20%] mt-[4%] p-3 px-5 mb-[5%] mx-auto">
+            <div >
 
                 <label htmlFor="barcode" className=" font-medium uppercase">Enter&#160;Barcode&#160;:</label><br />
 
@@ -36,7 +36,7 @@ const InputBar = () => {
                 </div>
             </div>
            {
-            productfound.status_verbose === 'product found' && <ProductData productfound={productfound}/> 
+            productfound.id === input && <ProductData productfound={productfound}/> 
            }
         </div>
     )
