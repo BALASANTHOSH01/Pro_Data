@@ -1,8 +1,10 @@
 # Pro Data
 
-#### Our goal is to provide consumers with comprehensive food product information prior to their use.
+- Our goal is to provide consumers with comprehensive product information prior to their use.
 
-## Getting Started 
+#### [Website Link](https://prodataofficial.netlify.app/)
+
+## Getting Started :
 
 1.  Fork or clone the repository
 2. Install node modules by using `npm install` or `npm i`
